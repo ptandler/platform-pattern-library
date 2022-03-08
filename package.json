@@ -12,6 +12,7 @@
   "homepage": "https://github.com/ushahidi/platform-pattern-library",
   "scripts": {
     "prepublish": "gulp build",
+    "serve": "gulp",
     "jshint": "jshint ."
   },
   "engines": {
