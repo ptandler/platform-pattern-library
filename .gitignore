@@ -8,6 +8,8 @@ assets/js/handlebars.js
 
 !pattern-library/front-end-guidelines/icons/*
 
+/.idea/
+
 # OS generated files #
 ######################
 */.DS_Store
