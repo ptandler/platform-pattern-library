@@ -27,7 +27,7 @@
         [role="main"] {
 
             @include media($medium) {
-                @include padding-left($lg-spacing*2);
+                @include padding-left($mode-bar-width);
             }
 
             .timeline-col {
@@ -110,7 +110,7 @@
                 top: 0;
 
                 @include media($medium) {
-                    @include left(224px);
+                    @include left($mode-context-width);
                 }
 
             }
@@ -135,13 +135,13 @@
     .mainsheet {
 
         @include media($medium) {
-            @include left(224px);
+            @include left($mode-context-width);
         }
 
         .mainsheet-window {
 
             @include media($medium) {
-                @include left(224px);
+                @include left($mode-context-width);
             }
         }
 

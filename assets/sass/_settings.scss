@@ -216,6 +216,9 @@ $sm-spacing: $base-spacing/1.5; // 16px
 $lg-spacing: $base-spacing*1.333333333; // 32px
 $huge-spacing: $base-spacing*1.666666667; // 40px
 
+$mode-bar-width: 85px; // $lg-spacing*2;
+$mode-context-width: 224px; // $lg-spacing*2;
+
 //Border
 $base-border: 1px solid $border-color;
 $base-border-dark: 1px solid $border-color-dark;

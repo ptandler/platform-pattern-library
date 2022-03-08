@@ -9,11 +9,11 @@
         @include padding-left(0);
 
         @include media($medium) {
-            @include padding-left($lg-spacing*2);
+            @include padding-left($mode-bar-width);
         }
 
         input[type=checkbox] {
-            margin: 0px;
+            margin: 0;
         }
 
         .toolbar {
@@ -22,7 +22,7 @@
             padding: 0 $sm-spacing;
 
             @include media($medium) {
-                @include left($lg-spacing*2);
+                @include left($mode-bar-width);
                 padding: 0 $lg-spacing;
             }
 
@@ -301,7 +301,7 @@
     .message {
 
         @include media($medium) {
-            @include left(64px);
+            @include left($mode-bar-width);
         }
     }
 

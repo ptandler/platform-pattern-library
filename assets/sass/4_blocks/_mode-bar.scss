@@ -2,7 +2,7 @@
     @include clearfix;
     position: relative;
     z-index: $modebar;
-    max-width: $lg-spacing*2;
+    max-width: $mode-bar-width;
     @include equal-radius(0);
     background-color: $color-primary;
 
@@ -194,7 +194,7 @@
 
         @include media($medium) {
             // position: fixed;
-            width: $lg-spacing*2;
+            width: $mode-bar-width;
             bottom: 0;
 //            box-shadow: 0 -4px 4px $color-primary;
         }
