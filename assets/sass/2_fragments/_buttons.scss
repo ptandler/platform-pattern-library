@@ -6,7 +6,7 @@ input[type="button"] {
         display: initial;
         width: .866666667em;
         height: .866666667em;
-        fill: $white;
+        fill: $color-primary-text; //$white;
         @include transition(0.3s);
 
         + .button-label {
@@ -93,13 +93,13 @@ input[type="button"] {
 .button-beta {
 
     svg.iconic {
-        fill: $link-color;
+        fill: $color-light-text;
     }
 
     .loading {
 
         .line {
-            background-color: $link-color;
+            background-color: $color-light-text;
         }
     }
 }

@@ -48,12 +48,12 @@
             .form-field {
 
                 input[type="search"] {
-                    color: $white;
+                    color: $color-primary-text; // $white;
                     border-color: transparent;
                     background-color: $color-primary-delta;
 
                     &::placeholder {
-                        color: $white;
+                        color: $color-primary-text-disabled;
                     }
                 }
 
@@ -64,13 +64,13 @@
                         &:focus {
 
                             +svg.iconic {
-                                fill: $color-primary-beta;
+                                fill: $color-primary-text; // $color-primary-beta;
                             }
                         }
                     }
 
                     svg.iconic {
-                        fill: $white;
+                        fill: $color-primary-text; // $white;
                     }
                 }
             }
@@ -213,7 +213,7 @@
                 .input-with-icon {
 
                     svg.iconic {
-                        fill: $color-primary-beta;
+                        fill: $color-primary-text; // $color-primary-beta;
                     }
                 }
             }
@@ -258,9 +258,9 @@
                 padding-right: $tiny-spacing;
                 padding-left: $tiny-spacing;
             }
-        } 
+        }
     }
-    
+
     .toolbar-donating {
         color: #C7CCD4;
         display: inline-flex;
@@ -270,7 +270,7 @@
         .coins {
             width: 23px;
             height: 23px;
-            
+
         }
         .iconic {
             fill:#C7CCD4;

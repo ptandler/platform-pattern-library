@@ -8,14 +8,14 @@
 
     .badge {
         background-color: $color-secondary;
-        color: $color-dark-beta;
+        color: $color-secondary-text; // $color-dark-beta;
     }
     .bug {
         background-color: $color-primary;
-        color: $white;
+        color: $color-primary-text; // $white;
 
         .iconic {
-        fill: $color-secondary !important;
+            fill: $color-primary-text-disabled !important; // $color-secondary !important;
         }
     }
 

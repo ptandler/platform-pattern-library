@@ -65,10 +65,10 @@
 
 
             &:hover, &:focus {
-                color: $white;
+                color: $color-secondary-alpha;
 
                 svg.iconic {
-                    fill: $white;
+                    fill: $color-secondary-alpha;
                 }
             }
         }
@@ -108,6 +108,10 @@
         }
 
         li {
+
+            .icon {
+                height: 45px; // TODO: is the height defined somewhere as constant?
+            }
 
             @include media($medium-down) {
                 display: block;
@@ -262,7 +266,7 @@
                 top: $tiny-spacing;
                 @include left(90%);
                 z-index: $modal;
-                color: $white;
+                color: $color-primary-text;
                 @include typeBase;
                 text-align: center;
                 white-space: nowrap;

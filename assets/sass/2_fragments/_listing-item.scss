@@ -222,7 +222,7 @@
         svg.iconic {
             width: 1em;
             height: 1em;
-            fill: $color-primary-beta;
+            fill: $color-light-text;
             vertical-align: middle;
         }
 
@@ -234,7 +234,7 @@
                 z-index: $body;
                 top: 50%;
                 @include left(-$tiny-spacing);
-                fill: $color-primary;
+                fill: $color-light-text;
                 margin-top: -$tiny-spacing;
             }
         }

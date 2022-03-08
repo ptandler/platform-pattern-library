@@ -63,9 +63,10 @@ $end: right; // end = end reading position
 \*------------------------------------*/
 
 // color scheme foundation
-$color-primary: #373E46; // faded blue
-$color-secondary: #FFC334; // gold
-$color-tertiary: #C7CCD4; // pale grey
+//$color-primary: rgba(76, 76, 76, 0.09); // light gray
+$color-primary: #efefef; // light gray
+$color-secondary: rgb(244, 155, 33); // IKU orange
+$color-tertiary: #4c4c4c; // rgb(76, 76, 76); //
 
 // blacks and dark greys
 $color-dark-alpha: #222222;
@@ -79,50 +80,67 @@ $color-light-beta: #D6D5D2;
 $color-light-gamma: #EEEEEE;
 $color-light-delta: #FAFAFA;
 
+$color-dark-text: $color-light-gamma;
+$color-dark-text-focus: $color-light-alpha;
+$color-light-text: $color-dark-alpha;
+$color-light-text-focus: $color-dark-beta;
+$color-light-text-disabled: $color-dark-delta;
+
 // primary color spectrum, based on primary color (faded blue)
-$color-primary-alpha: #1E232A;
-$color-primary-beta: #2B323A;
-$color-primary-gamma: #40444A;
-$color-primary-delta: #60646B;
-$color-primary-epsilon: #8E9297;
-$color-primary-zeta: #F1F1F4;
+//$color-primary-alpha: lighten($color-primary, 8%);
+$color-primary-alpha: #F3F3F3; // pretty light gray, a bit lighter that the primary light gray though ...
+$color-primary-beta: lighten($color-primary, 16%);
+$color-primary-gamma: lighten($color-primary, 24%);
+$color-primary-delta: lighten($color-primary, 32%);
+$color-primary-epsilon: lighten($color-primary, 40%);
+$color-primary-zeta: lighten($color-primary, 48%);
 
 // secondary color spectrum, based on secondary color (gold)
-$color-secondary-alpha: #b98200;
+$color-secondary-alpha: lighten($color-secondary, 8%);
 
 $black: $color-dark-alpha;
 $mid-black: lighten( $color-dark-alpha, 8% );
 $lt-black: lighten(desaturate(adjust-hue($color-dark-alpha, 4.8485), 10.3708), 28.6275);
 $white: #FFFFFF;
-$lt-gray: #eeeeee;
-$dk-gray: #737373;
-$mid-gray: lighten( $dk-gray, 15% );
+$lt-gray: $color-light-gamma; // = #eeeeee;
+$dk-gray: $color-dark-delta; // = #737373;
+$mid-gray: $color-light-beta; // lighten( $dk-gray, 15% );
 $lt-brown: #FBF9F6;
 $dk-brown: #EFECE8;
 $blue: #2274b4;
 $yellow: $color-secondary;
 $green: #4fab2f;
-$red: #B00F23;
+// $red: #B00F23;
+// $green: rgb(0, 204, 204);
+$red: rgb(170, 0, 69);
 $brown: #87582D;
 $dark-blue: #0000E0;
 
+// colors that are well enough readable (high contrast) when used with the color scheme
+// e.g. for text if the background is one of the color scheme
+$color-primary-text: $color-tertiary; // default dark gray text on light gray
+$color-primary-text-alpha: $color-dark-alpha;
+$color-primary-text-disabled: $color-dark-delta;
+$color-secondary-text: $color-primary-text; // dark gray text on IKU orange
+$color-tertiary-text: $white; // white text on dark gray
+
 // Text
-$text-color: $color-dark-beta;
+$text-color: $color-primary-text; // $color-dark-beta;
 $base-color: $color-dark-alpha;
 $dark-text-color: $dk-gray;
 $big-number-color: $dk-gray;
-$lt-text-color: $white;
+$lt-text-color: $color-primary-text; // $white;
 $info-color: $blue;
 $confirmation-color: $green;
 $error-color: $red;
 
 
 // Links
-$link-color: $color-primary;
-$link-hover-color: darken( $link-color, 20% );
+$link-color: $color-secondary;
+$link-hover-color: darken( $link-color, 16% );
 
 $link-color-dark-bg: $color-secondary;
-$link-color-dark-bg-hover: lighten( $link-color-dark-bg, 10% );
+$link-color-dark-bg-hover: lighten( $link-color-dark-bg, 16% );
 
 // Backgrounds
 $dark-bg: $color-primary-alpha;

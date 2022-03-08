@@ -45,7 +45,7 @@ fieldset {
             background-color: $color-primary;
             padding: 2px;
             margin: 0 4px;
-            
+
             .bug {
                 color: $color-dark-alpha;
             }
@@ -127,7 +127,7 @@ fieldset {
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-between;
-            
+
         }
         .form-column {
             display: flex;
@@ -682,7 +682,7 @@ fieldset {
         position: absolute;
         top: 13px;
         @include left(16px);
-        fill: $color-primary;
+        fill: $color-primary-text;
     }
 
     input[type="search"]::-webkit-search-cancel-button {

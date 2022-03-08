@@ -13,7 +13,7 @@
             top: $base-spacing;
             @include right($sm-spacing);
             margin-top: -$tiny-spacing;
-    
+
             @include media($mobile) {
                 @include right($base-spacing);
             }
@@ -36,6 +36,7 @@
         padding-bottom: $sm-spacing;
 
         li {
+            background: $color-light-gamma;
             position: relative;
             padding: $tiny-spacing $sm-spacing;
             margin: 4px 0;
