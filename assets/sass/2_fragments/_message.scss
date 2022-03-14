@@ -1,7 +1,7 @@
 .message {
     position: relative;
     @include containerSheet;
-    color: $color-light-delta;
+    color: $color-primary-text;
     @include equal-radius(0px);
     background-color: $color-primary;
     @include direction;
