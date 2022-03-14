@@ -93,7 +93,7 @@
         @include transition(0.3s);
 
         @include media($medium) {
-            @include left(288px);
+            @include left($mode-bar-width + $mode-context-width);
         }
 
         &.transient {
@@ -189,7 +189,7 @@
 
         @include media($medium) {
             padding-top: 68px;
-            @include padding-left(288px);
+            @include padding-left($mode-bar-width + $mode-context-width);
         }
 
         .main-col {
@@ -236,7 +236,7 @@
             @include media($medium) {
                 top: 0;
                 @include right(0);
-                @include left(288px);
+                @include left($mode-bar-width + $mode-context-width);
                 width: auto;
             }
 
@@ -285,7 +285,7 @@
 
             @include media($medium) {
                 top: 68px;
-                @include left(288px);
+                @include left($mode-bar-width + $mode-context-width);
             }
         }
 
@@ -381,7 +381,7 @@
                 width: 100%;
 
                 @include media($medium) {
-                    @include left(288px);
+                    @include left($mode-bar-width + $mode-context-width);
 
                 }
 
@@ -529,7 +529,7 @@
             margin-top: -$sm-spacing;
 
             @include media($medium) {
-                @include left(288px);
+                @include left($mode-bar-width + $mode-context-width);
             }
 
             .line {
@@ -570,7 +570,7 @@
         .picker__holder {
 
             @include media($medium) {
-                @include left(288px);
+                @include left($mode-bar-width + $mode-context-width);
             }
         }
 
@@ -695,7 +695,7 @@
         left: 0;
 
         @include media($medium) {
-            // left: 288px;
+            // left: $mode-bar-width + $mode-context-width;
         }
 
         .mainsheet-window {
@@ -713,7 +713,7 @@
             }
 
             @include media($medium) {
-                // left: 288px;
+                // left: $mode-bar-width + $mode-context-width;
                 top: -999px;
                 bottom: auto;
                 margin-right: 32%;
