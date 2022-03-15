@@ -1,8 +1,8 @@
 .tabs-menu {
     text-align: center;
-    border-top: 1px solid $color-light-gamma;
-    border-bottom: 1px solid $color-light-gamma;
-    background-color: $white;
+    border-top: 1px solid $color-light-beta;
+    border-bottom: 1px solid $color-light-beta;
+    background-color: $color-light-delta;
 
     ul {
         @extend .list-reset;
@@ -16,28 +16,28 @@
 
             a {
                 display: inline-block;
-                color: $color-primary-epsilon;
+                color: $color-light-text;
                 padding: $sm-spacing $base-spacing;
 
                 svg.iconic {
-                    fill: $color-primary-epsilon;
+                    fill: $color-light-text;
                     position: relative;
                     top: 2px;
                     @include margin-right(4px);
                 }
 
                 &:hover {
-                    color: $color-primary;
+                    color: $color-light-text-focus;
 
                     svg.iconic {
-                        fill: $color-primary;
+                        fill: $color-light-text-focus;
                     }
                 }
             }
 
             .tab-button {
                 display: inline-block;
-                color: $color-primary-epsilon;
+                color: $color-light-text;
                 padding: $sm-spacing $base-spacing;
                 font-weight: 400;
                 text-transform: none;
@@ -46,18 +46,18 @@
                 letter-spacing: 0px;
 
                 svg.iconic {
-                    fill: $color-primary-epsilon;
+                    fill: $color-light-text;
                     position: relative;
                     top: 2px;
                     @include margin-right(4px);
                 }
 
                 &:hover {
-                    color: $color-primary;
+                    color: $color-light-text-focus;
                     box-shadow: none;
                     background: none;
                     svg.iconic {
-                        fill: $color-primary;
+                        fill: $color-light-text-focus;
                     }
                 }
             }
@@ -65,21 +65,21 @@
             &.active {
 
                 a {
-                    color: $color-primary-alpha;
+                    color: $color-light-text-focus;
                     border-bottom: 2px solid $color-secondary;
 
                     svg.iconic {
-                        fill: $color-primary-alpha;
+                        fill: $color-light-text-focus;
                     }
                 }
 
                 .tab-button {
-                    color: $color-primary-alpha;
+                    color: $color-light-text-focus;
                     opacity: 1;
                     border-bottom: 2px solid $color-secondary;
 
                     svg.iconic {
-                        fill: $color-primary-alpha;
+                        fill: $color-light-text-focus;
                     }
                 }
             }

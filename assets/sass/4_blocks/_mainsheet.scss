@@ -26,7 +26,7 @@
 
         @include media($medium) {
             margin-top: $base-spacing;
-            margin-right: $base-spacing;
+            margin-right: $base-spacing + 55px; // to avoid interference with close button of modal dialogs
             margin-left: $base-spacing;
         }
     }

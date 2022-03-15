@@ -49,7 +49,8 @@
                 @include transition(0.3s);
             }
 
-            svg.ushahidi-logo {
+            svg.ushahidi-logo,
+            .help-icon {
                 display: block;
                 width: $base-spacing;
                 height: $base-spacing;
