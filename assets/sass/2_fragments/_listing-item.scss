@@ -393,12 +393,12 @@
     }
 
     .button-link {
-        color: $color-tertiary;
+        color: $color-primary-text;
         font-size: .857142857em;
         padding: 0 $sm-spacing;
 
         &:hover {
-            color: $white;
+            color: $color-primary-text-alpha;
         }
     }
 
