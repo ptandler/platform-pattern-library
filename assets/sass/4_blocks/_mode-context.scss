@@ -7,11 +7,9 @@
     @include transition(all .25s);
 
     .breadcrumbs {
-
         li {
-
             &:after {
-                background: $color-primary-alpha !important;
+                background: $color-primary-gamma !important;
             }
         }
     }
@@ -206,17 +204,17 @@
         }
 
         a {
-            color: $color-tertiary;
+            color: $color-primary-text-alpha;
 
             &:hover {
-                color: $white;
+                color: $color-primary-text;
             }
         }
 
         li {
 
             &:after {
-                background-color: $color-light-gamma;
+                background-color: $color-primary-gamma;
             }
 
             &:first-child {
