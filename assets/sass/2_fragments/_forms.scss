@@ -33,6 +33,19 @@ fieldset {
             @include margin-right(4px);
         }
 
+        .marker-icon {
+            //background: $color-primary-text;
+            width: $lg-spacing;
+            height: $lg-spacing;
+            padding: $tiny-spacing;
+            margin: $tiny-spacing;
+
+            img {
+                max-width: 100%;
+                max-height: 100%;
+            }
+        }
+
         .tooltip {
             display: inline-block;
             color: $white;
